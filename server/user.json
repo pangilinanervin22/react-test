@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": -1,
+      "name": "Ervin Pangilinan",
+      "gender": "male",
+      "password": "ervin22",
+      "wishList": "",
+      "chosen_user": 0,
+      "isAdmin": true
+    },
+    {
+      "name": "Randolph Ullrich",
+      "age": 19,
+      "gender": "female",
+      "isAdmin": false,
+      "wishList": "",
+      "password": "12345",
+      "id": 0
+    },
+    {
+      "name": "Jessie Romaguera IV",
+      "age": 23,
+      "gender": "male",
+      "isAdmin": false,
+      "wishList": "",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "name": "Sharon Gottlieb",
+      "age": 21,
+      "gender": "female",
+      "isAdmin": false,
+      "wishList": "",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "name": "Sherman Schoen I",
+      "age": 21,
+      "gender": "male",
+      "isAdmin": false,
+      "wishList": "",
+      "password": "12345",
+      "id": 3
+    }
+  ]
+}
