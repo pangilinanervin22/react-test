@@ -1,19 +1,26 @@
-import { useState } from "react";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter } from "react-router-dom";
+import { queryClient } from "./app/api";
+import MainNavBar from "./components/MainNavBar";
+import MainReactRouter from "./components/MainReactRouter";
+import useThemeHook from "./utils/useThemeHook";
 
 function App() {
-	const [count, setCount] = useState(0);
+	const [theme, toggleMode] = useThemeHook();
 
 	return (
-		<div className="App">
-			<div className="card">
-				<button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
-				</button>
-				<p>
-					Edit <code>src/App.tsx</code> and save to test HMR
-				</p>
-			</div>
-		</div>
+		<>
+			<BrowserRouter>
+				<QueryClientProvider client={queryClient}>
+					<ThemeProvider theme={theme}>
+						<CssBaseline />
+						<MainNavBar />
+						<MainReactRouter />
+					</ThemeProvider>
+				</QueryClientProvider>
+			</BrowserRouter>
+		</>
 	);
 }
 
